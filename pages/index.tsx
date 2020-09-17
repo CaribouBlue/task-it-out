@@ -1,12 +1,15 @@
 import AppLayout from 'layouts/app-layout'
+import { FunctionComponent } from 'react'
 
-export default function Home() {
+const Home: FunctionComponent = () => {
   return (
     <AppLayout>
-      <div class="cell auto cell-block-container">
+      <div className="cell auto cell-block-container">
         <h1>Page title</h1>
         <p>page content</p>
       </div>
     </AppLayout>
   )
 }
+
+export default Home

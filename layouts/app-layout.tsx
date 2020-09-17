@@ -1,30 +1,32 @@
 import Head from 'next/head'
-import styles from 'styles/AppLayout.module.scss'
+import { FunctionComponent } from 'react'
 
-export default function AppLayout({ children }) {
+const AppLayout: FunctionComponent = ({ children }) => {
   return (
     <>
       <Head>
         <title>TIO</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div class="grid-y medium-grid-frame">
-        <div class="cell shrink top-bar" className={styles.topBar}>
-          <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text">Task It Out</li>
+      <div className="grid-y medium-grid-frame">
+        <div className="cell shrink top-bar">
+          <div className="top-bar-left">
+            <ul className="menu">
+              <li className="menu-text">Task It Out</li>
             </ul>
           </div>
-          <div class="top-bar-right">
-            <ul class="menu">
+          <div className="top-bar-right">
+            <ul className="menu">
             </ul>
           </div>
         </div>
         {children}
-        <footer class="cell shrink">
+        <footer className="cell shrink">
           <p>footer</p>
         </footer>
       </div>
     </>
   )
 }
+
+export default AppLayout
