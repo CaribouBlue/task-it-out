@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index page matches snapshot 1`] = `
+<div
+  className="grid-y medium-grid-frame"
+>
+  <div
+    className="cell shrink top-bar"
+  >
+    <div
+      className="top-bar-left"
+    >
+      <ul
+        className="menu"
+      >
+        <li
+          className="menu-text"
+        >
+          Task It Out
+        </li>
+      </ul>
+    </div>
+    <div
+      className="top-bar-right"
+    >
+      <ul
+        className="menu"
+      />
+    </div>
+  </div>
+  <div
+    className="cell auto cell-block-container"
+  >
+    <h1>
+      Page title
+    </h1>
+    <p>
+      page content
+    </p>
+  </div>
+  <footer
+    className="cell shrink"
+  >
+    <p>
+      footer
+    </p>
+  </footer>
+</div>
+`;
