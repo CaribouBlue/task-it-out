@@ -4,6 +4,7 @@ export enum TaskStatus {
 }
 
 export type Task = {
+  _key: string;
   name: string;
   status: TaskStatus;
   due: Date;

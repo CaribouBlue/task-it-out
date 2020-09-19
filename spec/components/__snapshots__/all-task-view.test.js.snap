@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllTaskView component matches snapshot 1`] = `
+<table>
+  <tbody>
+    <tr>
+      <td>
+        task1
+      </td>
+      <td>
+        Sat Sep 19 2020
+      </td>
+      <td>
+        open
+      </td>
+    </tr>
+    <tr>
+      <td>
+        task2
+      </td>
+      <td>
+        Sat Sep 19 2020
+      </td>
+      <td>
+        open
+      </td>
+    </tr>
+    <tr>
+      <td>
+        task3
+      </td>
+      <td>
+        Sat Sep 19 2020
+      </td>
+      <td>
+        open
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

@@ -1,12 +1,13 @@
-import AppLayout from 'layouts/app-layout'
 import { FunctionComponent } from 'react'
+import AppLayout from 'layouts/app-layout'
+import AllTaskView from 'components/all-task-view'
+import MockTasks from 'mock-data/tasks'
 
 const Home: FunctionComponent = () => {
   return (
     <AppLayout>
       <div className="cell auto cell-block-container">
-        <h1>Page title</h1>
-        <p>page content</p>
+        <AllTaskView tasks={MockTasks}></AllTaskView>
       </div>
     </AppLayout>
   )

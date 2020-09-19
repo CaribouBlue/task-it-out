@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import IndexPage from '../../pages/index';
+import TaskRow from '../../components/task-row';
+import MockTasks from '../../mock-data/tasks';
 
 let consoleErrorSpy = null
 beforeEach(() => {
@@ -11,9 +12,9 @@ afterEach(() => {
   expect(consoleErrorSpy).not.toHaveBeenCalled();
 })
 
-test('Index page matches snapshot', () => {
+test('TaskRow component matches snapshot', () => {
   const component = renderer.create(
-    <IndexPage></IndexPage>,
+    <TaskRow task={MockTasks[0]}></TaskRow>,
   );
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();

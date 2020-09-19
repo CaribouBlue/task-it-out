@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskRow component matches snapshot 1`] = `
+<tr>
+  <td>
+    task1
+  </td>
+  <td>
+    Sat Sep 19 2020
+  </td>
+  <td>
+    open
+  </td>
+</tr>
+`;
