@@ -1,7 +1,9 @@
 import { Component, ChangeEvent, KeyboardEvent } from 'react'
-import { TaskStatus } from 'types/task'
+import { Task } from 'types/task'
+import { parseTaskString } from 'services/add-task-bar'
 
 type PropType = {
+  onAddTask(task: Task): any,
 }
 
 type StateType = {
@@ -24,6 +26,9 @@ class AddTaskBar extends Component<PropType, StateType> {
   handleInputSubmit = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key == 'Enter') {
       e.preventDefault()
+      const taskString = this.state.input
+      const newTask = parseTaskString(taskString)
+      this.props.onAddTask(newTask)
       this.setState({input: ''})
     }
   }
