@@ -1,4 +1,4 @@
-import { parseTaskString } from 'services/task-bar'
+import { parseTaskString } from 'src/services/add-task-bar'
 
 test('parseTaskString should parse task name', () => {
   let taskStr = 'this is my task string'

@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import AddTaskBar from '../../components/add-task-bar';
-import MockTasks from '../../mock-data/tasks';
+import AddTaskBar from 'src/components/add-task-bar';
+import MockTasks from 'mock-data/tasks';
 
 let consoleErrorSpy = null
 beforeEach(() => {

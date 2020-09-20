@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TaskRow from '../../components/task-row';
-import MockTasks from '../../mock-data/tasks';
+import TaskRow from 'src/components/task-row';
+import MockTasks from 'mock-data/tasks';
 
 let consoleErrorSpy = null
 beforeEach(() => {

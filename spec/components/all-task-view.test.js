@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import AllTaskView from '../../components/all-task-view';
-import MockTasks from '../../mock-data/tasks';
+import AllTaskView from 'src/components/all-task-view';
+import MockTasks from 'mock-data/tasks';
 
 let consoleErrorSpy = null
 beforeEach(() => {
