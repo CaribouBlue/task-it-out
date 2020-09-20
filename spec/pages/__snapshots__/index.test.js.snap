@@ -31,6 +31,16 @@ exports[`Index page matches snapshot 1`] = `
   <div
     className="cell auto cell-block-container"
   >
+    <form>
+      <input
+        aria-describedby="addTask"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="I need to task it out ..."
+        type="text"
+        value=""
+      />
+    </form>
     <table>
       <tbody>
         <tr>

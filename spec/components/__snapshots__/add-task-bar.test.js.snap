@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTaskBar component matches snapshot 1`] = `
+<form>
+  <input
+    aria-describedby="addTask"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="I need to task it out ..."
+    type="text"
+    value=""
+  />
+</form>
+`;
