@@ -16,4 +16,8 @@ test('parseTaskString should parse due date', () => {
 
   due = parseTaskString(taskStr + ' hahaha more test').due
   expect(due.toString()).toEqual(new Date('12/12/12').toString())
+
+  // should default to today
+  due = parseTaskString(taskStr.slice(0, 10)).due
+  expect(due.toString()).toEqual(new Date().toString())
 })
