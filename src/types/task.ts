@@ -9,3 +9,7 @@ export type Task = {
   status: TaskStatus;
   due: Date;
 }
+
+export enum TaskDelimiter {
+  due = '$'
+}
